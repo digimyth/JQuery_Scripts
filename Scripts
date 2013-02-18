@@ -12,3 +12,10 @@
         return attributes;
     };
 })(jQuery);
+
+
+//Loop throught each child element and push each ones class attr
+	var l=[];
+	$('#leftBox').children().each(function(i, v) {
+		l.push($(v).attr('class'))
+						});
